@@ -1,0 +1,36 @@
+.searchbarActive {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+input {
+  padding: 1rem;
+  background-color: var(--blue-popup-menu);
+  width: 100%;
+  border-radius: 0.5rem;
+
+  &::placeholder {
+    font-family: var(--font-inter);
+    color: var(--text-white-thin);
+  }
+}
+
+.search-button {
+  font-size: 1.5rem;
+  line-height: 150%;
+  padding: 0.25rem 0.725rem;
+  background-color: transparent;
+  border: none;
+  color: var(--text-white);
+
+  &:hover {
+    background-color: var(--blue-300-thin);
+  }
+
+  &:focus {
+    background-color: var(--blue-300-extrathin);
+  }
+}

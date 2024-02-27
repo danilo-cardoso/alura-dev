@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { NavbarComponent } from '../navbar/navbar.component';
@@ -14,9 +14,14 @@ import { NavbarComponent } from '../navbar/navbar.component';
   styleUrl: './menu-hamburguer.component.css'
 })
 export class MenuHamburguerComponent {
-  active: boolean = false;
+
+  @Input() active: boolean = false;
+  @Output() toggle = new EventEmitter<void>();
+
+  menuOpen: string = 'fa-bars';
+  menuClose: string = 'fa-xmark'
 
   toggleMenu() {
-    this.active = !this.active;
+    this.toggle.emit();
   }
 }

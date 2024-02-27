@@ -1,6 +1,8 @@
-<div class="searchbar">
-  <input id="searchbar-input" type="search" placeholder="Busque por algo...">
+<div [ngClass]="{searchbarActive: active}">
+  <input id="searchbar-input" type="search" placeholder="Busque por algo..." [ngClass]="{hidden: !active}">
   <label for="searchbar-input">
-    <span class="fa-solid fa-magnifying-glass"></span>
+    <button class="search-button" title="{{ title }}" type="button" (click)="toggleSearchBar()">
+      <i [ngClass]="active ? 'fa-solid fa-xmark' : 'fa-solid fa-magnifying-glass'">X</i>
+    </button>
   </label>
 </div>

@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+h1 img {
+  width: 145px;
+  height: 34.05px;
+}
+
+.navigation {
+  display: flex;
+  gap: 0.5rem;
+}

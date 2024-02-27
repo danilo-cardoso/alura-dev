@@ -1,5 +1,12 @@
 <header>
-  <h1 aria-labelledby="logo"><img id="logo" src="../../../assets/img/Logo.png" alt="Alura Dev"></h1>
-  <app-searchbar></app-searchbar>
-  <app-menu-hamburguer></app-menu-hamburguer>
+  <h1 aria-describedby="logo" [ngClass]="{hidden: searchbarActive}">
+    <a [routerLink]="['/editor']" >
+      <img id="logo" src="../../../assets/img/Logo.png" alt="Alura Dev">
+    </a>
+  </h1>
+  <div class="navigation">
+    <app-searchbar [active]="searchbarActive" (searchToggle)="toggleSearchBar()"></app-searchbar>
+    <app-menu-hamburguer [active]="navbarActive" (toggle)="toggleNavbar()" [ngClass]="{hidden: searchbarActive}"></app-menu-hamburguer>
+  </div>
 </header>
+<app-navbar [ngClass]="{hidden: !navbarActive}"></app-navbar>

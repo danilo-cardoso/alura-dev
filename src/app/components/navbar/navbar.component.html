@@ -1,16 +1,20 @@
 <nav>
   <ul class="navbar__list">
     <li class="navbar__item">
-      <a [routerLink]="['/editor']" routerLinkActive="router-link-active"  class="navbar__links">
+      <a [routerLink]="['/editor']" routerLinkActive="navbar__links-selected"  class="navbar__links">
         <i class="fa-solid fa-code"></i>
         <span>Editor de Código</span>
       </a>
     </li>
     <li class="navbar__item">
-      <a [routerLink]="['/community']" routerLinkActive="router-link-active"  class="navbar__links">
+      <a [routerLink]="['/community']" routerLinkActive="navbar__links-selected"  class="navbar__links">
         <i class="fa-solid fa-people-group"></i>
         <span>Comunidade</span>
       </a>
     </li>
   </ul>
+  <a href="#" class="profile">
+    <img src="../../../assets/img/eu.jpg" alt="Sua foto de perfil" class="profile__picture">
+    <i class="profile__name">Dan</i>
+  </a>
 </nav>
