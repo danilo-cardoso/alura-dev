@@ -12,10 +12,12 @@
   --blue-200: #7BA4FC;
   --blue-100: #96B9FD;
   --card-green: #9AFF6B;
+  --blue-popup-menu: #2D415B;
 
   /* Text Colors */
   --text-dark-grey: #141414;
   --text-white: #FFFFFF;
+  --text-white-thin: rgba(255, 255, 255, 0.56);
 
   /* Box Shadows */
   --shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.24);
@@ -34,4 +36,8 @@
   --font-regular: 400;
   --font-bold: 700;
 
+}
+
+.hidden {
+  display: none;
 }

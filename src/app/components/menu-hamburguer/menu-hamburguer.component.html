@@ -1,0 +1,4 @@
+<button title="Menu de navegação" type="button" class="menu" [ngClass]="{selected: active}" (click)="toggleMenu()">
+  <i class="fa-solid fa-bars"></i>
+</button>
+<app-navbar [ngClass]="{hidden: !active}"></app-navbar>

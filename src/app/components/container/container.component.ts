@@ -2,14 +2,14 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-community',
+  selector: 'app-container',
   standalone: true,
   imports: [
     CommonModule
   ],
-  templateUrl: './community.component.html',
-  styleUrl: './community.component.css'
+  templateUrl: './container.component.html',
+  styleUrl: './container.component.css'
 })
-export class CommunityComponent {
+export class ContainerComponent {
 
 }

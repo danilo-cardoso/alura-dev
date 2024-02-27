@@ -2,14 +2,14 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-community',
+  selector: 'app-searchbar',
   standalone: true,
   imports: [
     CommonModule
   ],
-  templateUrl: './community.component.html',
-  styleUrl: './community.component.css'
+  templateUrl: './searchbar.component.html',
+  styleUrl: './searchbar.component.css'
 })
-export class CommunityComponent {
+export class SearchbarComponent {
 
 }
