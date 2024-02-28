@@ -1,3 +1,4 @@
+import { CodeCardComponent } from './../../components/code-card/code-card.component';
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
@@ -10,7 +11,8 @@ import { ContainerComponent } from '../../components/container/container.compone
   imports: [
     CommonModule,
     HeaderComponent,
-    ContainerComponent
+    ContainerComponent,
+    CodeCardComponent
   ],
   templateUrl: './code-editor.component.html',
   styleUrl: './code-editor.component.css'

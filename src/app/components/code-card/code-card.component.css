@@ -1,0 +1,21 @@
+:host {
+  background-color: var(--card-green);
+}
+
+.container {
+  background-color: var(--text-dark-grey);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: var(--text-white);
+}
+
+.code-snippet {
+  font-family: var(--font-roboto-mono);
+  text-wrap: wrap;
+  font-size: 0.875rem;
+}
+
+.mac-dots {
+  display: block;
+  margin-bottom: 1.5rem;
+}
