@@ -1,18 +1,28 @@
-:host {
-  background-color: var(--card-green);
+.color {
+  margin: 2.5rem 0 2rem 0;
+  padding: 2rem;
+  border-radius: 0.5rem;
 }
 
 .container {
   background-color: var(--text-dark-grey);
   padding: 1rem;
   border-radius: 0.5rem;
-  color: var(--text-white);
 }
 
 .code-snippet {
+  color: var(--text-white);
   font-family: var(--font-roboto-mono);
   text-wrap: wrap;
   font-size: 0.875rem;
+  min-height: 25rem;
+  width: 100%;
+  overflow: none;
+
+  &::placeholder {
+    color: var(--text-white-thin);
+    font-family: var(--font-roboto-mono);
+  }
 }
 
 .mac-dots {

@@ -5,9 +5,3 @@ app-container {
   background-color: var(--main-bg-color);
   padding: 1rem;
 }
-
-app-code-card {
-  margin: 2.5rem 0 2rem 0;
-  padding: 2rem;
-  border-radius: 0.5rem;
-}

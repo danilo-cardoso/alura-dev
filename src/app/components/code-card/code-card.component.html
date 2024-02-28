@@ -1,24 +1,17 @@
-<div class="container">
-  <img src="../../../assets/icons/mac_buttons.png" alt="" class="mac-dots">
-  <pre>
-    <code class="code-snippet">
-const pluckDeep = key =>
-  obj => key.split('.')
-    .reduce((accum, key) =>
-      accum[key], obj)
-
-const compose = (...fns) =>
-  res => fns
-    .reduce((accum, next) =>
-      next(accum), res)
-
-const unfold = (f, seed) => {{ '{' }}
-  const go = (f, seed, acc) => {{ '{' }}
-    const res = f(seed)
-    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-  {{ '}' }}
-  return go(f, seed, [])
-{{ '}' }}
-    </code>
-  </pre>
+<div class="color" [style.background]="color">
+  <div class="container">
+    <img src="../../../assets/icons/mac_buttons.png" alt="" class="mac-dots">
+    <textarea
+    autocomplete="off"
+    spellcheck="false"
+    autocorrect="off"
+    placeholder="Digite seu código aqui..."
+    class="code-snippet"
+    rows="1"
+    (keyup)="autoSizeTextArea($event)"
+    (keyup)="generateCode()"
+    [(ngModel)]="code"
+    >
+    </textarea>
+  </div>
 </div>

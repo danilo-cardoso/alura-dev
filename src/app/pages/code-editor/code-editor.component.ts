@@ -19,4 +19,13 @@ import { ContainerComponent } from '../../components/container/container.compone
 })
 export class CodeEditorComponent {
 
+  code: string = ''
+
+  constructor() { }
+
+  onCodeChange(code: string) {
+    this.code = code
+    console.log(this.code)
+  }
+
 }
