@@ -1,5 +1,4 @@
 .color {
-  margin: 2.5rem 0 2rem 0;
   padding: 2rem;
   border-radius: 0.5rem;
 }
@@ -10,22 +9,46 @@
   border-radius: 0.5rem;
 }
 
-.code-snippet {
-  color: var(--text-white);
-  font-family: var(--font-roboto-mono);
-  text-wrap: wrap;
-  font-size: 0.875rem;
-  min-height: 25rem;
-  width: 100%;
-  overflow: none;
-
-  &::placeholder {
-    color: var(--text-white-thin);
-    font-family: var(--font-roboto-mono);
-  }
-}
-
 .mac-dots {
   display: block;
   margin-bottom: 1.5rem;
+}
+
+.code-text, .code-input {
+  font-size: 0.875rem;
+  line-height: 150%;
+  font-family: var(--font-roboto-mono);
+  text-align: left;
+}
+
+.code-text {
+  position: relative;
+  z-index: 0;
+  padding: 0;
+  min-height: 60vh;
+  text-wrap: wrap;
+  overflow-x: scroll;
+  line-break: anywhere;
+  width: 100%;
+  white-space: pre-wrap;
+  color: var(--text-white);
+}
+
+.code-input {
+  position: absolute;
+  right: 4rem;
+  left: 4rem;
+  top: 11.5rem;
+  width: 66%;
+  min-height: 60vh;
+  color: rgba(255, 255, 255, 0.3);
+  cursor: text;
+  z-index: 1;
+  text-wrap: wrap;
+
+  &::placeholder {
+    color: var(--text-white-thin);
+    font-size: 0.875rem;
+    font-family: var(--font-roboto-mono);
+  }
 }
